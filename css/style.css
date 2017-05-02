@@ -55,26 +55,6 @@ body {
   color: black;
   text-align: center;
   padding: .5em;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(1); 
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1); 
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(1);
-  transition: all 200ms ease-in;
-  transform: scale(1);  
-}
-
-#site-name:hover {
-  z-index: 50;
-  -webkit-transition: all 200ms ease-in;
-  -webkit-transform: scale(3);
-  -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(3);   
-  -moz-transition: all 200ms ease-in;
-  -moz-transform: scale(3);
-  transition: all 200ms ease-in;
-  transform: scale(3);
 }
 
 #social_links{
@@ -151,7 +131,7 @@ nav .side-nav li a:hover {
 }
 
 #content {
-  max-width: 100em;
+  max-width: 90em;
   display: block;
   margin: 0 auto;
 }
@@ -162,6 +142,36 @@ nav .side-nav li a:hover {
 
 #content #page-main {
   padding: 5em;
+}
+
+#content #content-pictures {
+  padding-top: 5em !important;
+}
+
+#content #content-pictures .col{
+  padding-top: 2em !important;
+}
+
+#content #content-pictures img {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#content #page-main .slider {
+  padding-bottom: 2em;
+}
+
+#content #message-form {
+  padding: 1em;
+  padding-bottom: 3em;
+  margin: 1em;
+  margin-top: 5em;
+  border: 1px solid #eee;
+}
+
+#content #message-form [type="submit"]{
+  margin-top: 1em;
+  float: right;
 }
 
 #content #side-bar {

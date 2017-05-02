@@ -1,9 +1,10 @@
 <html>
 <head>
   <title> Hein - Portfolio </title>
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="icon" type="image/svg+xml" href="./imgs/logo.svg"/>
+  <link rel="stylesheet" type="text/css" href="./css/style.css"/>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -190,6 +191,29 @@
         <p>
           I will be very happy just if I can give a pleasant experience to the users of my software of web application. If my character matches what you are looking for as an employee, please download a copy of my resume on Resume page and also shoot me a short message. 
         </p>
+
+        <div id="content-pictures" class="row"> 
+          <div class="col s12 m6 l4">
+            <img  class="materialboxed" width="100%" src="./imgs/contents/assembly.jpg" data-caption="A screenshot of one of my projects" alt="Coding Screenshot">
+          </div>
+          <div class="col s12 m6 l4">
+            <img class="materialboxed" width="100%" src="./imgs/contents/coding.jpg" data-caption="A picture when working on a project" alt="Coding">
+          </div>
+          <div class="col s12 m6 l4">
+            <img class="materialboxed" width="100%" src="./imgs/contents/oscilloscope.jpg" data-caption="Oscilloscope in Physics Lab" alt="Oscilloscope">
+          </div>
+        </div>
+
+        <div id="message-form">
+          <form action="./message.php" method="POST">
+            <span> Send me a message | All fields are required. </span>
+            <input type="text" id="name" name="name" placeholder="Your Name">
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+            <textarea id="message" name="message" placeholder="Your Message" style="height:10em; width: 100%;"></textarea>
+            <input type="submit" value="Send Message">
+          </form>
+        </div>
+
 
       </div>
       <div id="side-bar" class="col l2 m12 s12 row">
